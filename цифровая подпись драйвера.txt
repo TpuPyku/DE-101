@@ -1,0 +1,9 @@
+@выключить проверку цифровой подписи драйвера
+
+bcdedit.exe /set loadoptions DDISABLE_INTEGRITY_CHECKS
+bcdedit.exe /set TESTSIGNING ON
+
+@включить проверку
+
+bcdedit.exe /set loadoptions ENABLE_INTEGRITY_CHECKS
+bcdedit.exe /set TESTSIGNING OFF
